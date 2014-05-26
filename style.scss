@@ -1,0 +1,176 @@
+$dark: #333;
+$lightpink: #FBEFF4;
+$darkfont: #43383A;
+$lighterfont: #5A4649;
+$white: #F5F5F5;
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+html{font-family: 'Special Elite', cursive;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}audio:not([controls]){display:none;height:0;}[hidden],template{display:none;}a{background:transparent;}a:active,a:hover{outline:0;}abbr[title]{border-bottom:1px dotted;}dfn{font-style:italic;}h1{font-size:2em;margin:.67em 0;}mark{background:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:1em 40px;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em;}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}button{overflow:visible;}button,select{text-transform:none;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input{line-height:normal;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}table{border-collapse:collapse;border-spacing:0;}td,th{padding:0;}b,strong,optgroup{font-weight:700;}pre,textarea{overflow:auto;}button::-moz-focus-inner,input::-moz-focus-inner,legend{border:0;padding:0;}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ .clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+ * html .clearfix             { zoom: 1; } /* IE6 */
+ *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+	background-image: url("images/background.jpg");
+
+	.wrapper {
+		background-color: rgba(173,151,155,0.8);
+  		-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+		box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+		margin: 5%;
+		min-height: 800px;
+		position: relative;
+		padding: 2%;
+	
+		.main {
+			clear: both;
+			width: 80%;
+		}
+
+	}
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80px;
+  // color: $white;
+  color: $lighterfont;
+  width: 40%;
+  margin-left: 3%;
+  margin-top: 3%;
+  position: relative;
+  letter-spacing: -1px;
+  // text-shadow: rgb(173,151,155) 0.1em 0.1em 0.2em;
+  text-shadow: $white 1px 4px 25px;
+
+	span.title {
+  		font-family: 'Pacifico', cursive;
+	}
+}
+
+h2 {
+	font-family: 'Josefin Sans', cursive;
+  	color: $white;
+  	text-shadow: $white 0.1em 0.1em 0.2em;
+  	font-size: 30px;
+  	position: relative;
+  	margin-left: 15%;
+  	margin-top: -5%;
+  	padding: 0;
+  	letter-spacing: -2px;
+  	text-shadow: $lighterfont 0.1em 0.1em 0.2em;
+}
+
+label, p, option, h3, input[type=text] {
+  font-family: 'Josefin Sans', cursive;
+  color:$white;
+  font-size: 20px;
+}
+
+input[type=text] {
+	color: $darkfont;
+	padding: 3px;
+}
+
+.selection, p.please {
+  padding: 1%;
+  float: left;
+}
+
+p.please {
+	margin: 0;
+}
+
+.avoidIngredients {
+	clear: both;
+	margin-left: 1%;
+}
+
+form {
+	display: inline-block;
+	
+	p {
+		display: inline-block;
+	}
+}
+
+button.button-submit {
+  width: 150px;
+  height: 50px;
+  float: right;
+  border: none;
+  background: $darkfont;
+  color: $white;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  position: absolute;
+  right: 5%;
+
+	span.special {
+		font-family: 'Josefin Sans', cursive;
+	}
+}
+
+#recipes {
+	clear: both;
+	padding-top: 5%;
+	width: 90%;
+	margin: 0 auto;
+
+		.recipe {
+			display: inline-block;
+			width: 180px;
+			height: 280px;
+			float: left;
+			border: 2px solid $darkfont;
+			margin: 3%;
+			background: $darkfont;
+
+			p, h3 {
+				font-size: 15px;
+				text-align: center;
+				color: $white;
+				line-height: 150%;
+			}
+
+			img {
+				width: 100%;
+			}
+
+			a{
+				color:white;
+				width: 100%;
+			}
+		}
+}
+
+footer {
+  text-align: right;
+  padding-right: 1%;
+
+	p {
+		font-size: 13px;
+		color: $white;
+		
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	
+	}
+}
