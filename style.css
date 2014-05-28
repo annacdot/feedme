@@ -226,11 +226,11 @@ h1 {
   text-shadow: whitesmoke 1px 4px 25px;
 }
 h1 span.title {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', sans-serif;
 }
 
 h2 {
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color: whitesmoke;
   text-shadow: whitesmoke 0.1em 0.1em 0.2em;
   font-size: 30px;
@@ -243,9 +243,13 @@ h2 {
 }
 
 label, p, option, h3, input[type=text] {
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color: whitesmoke;
   font-size: 20px;
+}
+
+option {
+  color: #43383a;
 }
 
 input[type=text] {
@@ -267,6 +271,12 @@ p.please {
   margin-left: 1%;
 }
 
+select {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  padding: 2px;
+}
+
 form {
   display: inline-block;
 }
@@ -281,13 +291,13 @@ button.button-submit {
   border: none;
   background: #43383a;
   color: whitesmoke;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', sans-serif;
   font-size: 20px;
   position: absolute;
   right: 5%;
 }
 button.button-submit span.special {
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #recipes {
