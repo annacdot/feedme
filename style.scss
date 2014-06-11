@@ -33,7 +33,7 @@ body {
 		-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 		box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 		margin: 5%;
-		min-height: 800px;
+		// min-height: 800px;
 		position: relative;
 		padding: 2%;
 	
@@ -59,12 +59,12 @@ h1 {
   text-shadow: $white 1px 4px 25px;
 
 	span.title {
-  		font-family: 'Pacifico', sans-serif;
+  		font-family: 'Pacifico', cursive;
 	}
 }
 
 h2 {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', cursive;
   	color: $white;
   	text-shadow: $white 0.1em 0.1em 0.2em;
   	font-size: 30px;
@@ -77,13 +77,9 @@ h2 {
 }
 
 label, p, option, h3, input[type=text] {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', cursive;
   color:$white;
   font-size: 20px;
-}
-
-option {
-	color: $darkfont;
 }
 
 input[type=text] {
@@ -105,12 +101,6 @@ p.please {
 	margin-left: 1%;
 }
 
-select {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 20px;
-	padding: 2px;
-}
-
 form {
 	display: inline-block;
 	
@@ -119,6 +109,13 @@ form {
 	}
 }
 
+p.diets {
+	width: 50%;
+	text-align: center;
+	line-height: 150%;
+	margin: 0 auto;
+	color: $darkfont;
+}
 button.button-submit {
   width: 150px;
   height: 50px;
@@ -126,40 +123,41 @@ button.button-submit {
   border: none;
   background: $darkfont;
   color: $white;
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Pacifico', cursive;
   font-size: 20px;
   position: absolute;
   right: 5%;
 
 	span.special {
-		font-family: 'Josefin Sans', sans-serif;
+		font-family: 'Josefin Sans', cursive;
 	}
 }
 
 #recipes {
 	clear: both;
 	padding-top: 5%;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 
 		.recipe {
 			display: inline-block;
-			width: 180px;
-			height: 280px;
+			width: 280px;
+			height: 220px;
 			float: left;
 			border: 2px solid $darkfont;
 			margin: 3%;
-			background: $darkfont;
 
 			p, h3 {
-				font-size: 15px;
+				font-size: 18px;
 				text-align: center;
-				color: $white;
+				color: $darkfont;
 				line-height: 150%;
 			}
 
 			img {
-				width: 100%;
+				max-width: 100%;
+				max-height: 100%;
+				margin-left: 35%;
 			}
 
 			a{
@@ -172,6 +170,9 @@ button.button-submit {
 footer {
   text-align: right;
   padding-right: 1%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
 	p {
 		font-size: 13px;
@@ -179,8 +180,46 @@ footer {
 		
 		a {
 			color: white;
-			text-decoration: none;
+			text-decoration: underline;
 		}
 	
 	}
+}
+
+@media only screen and (max-width:450px) {
+
+body .wrapper {
+	width: 100%;
+	margin: 0;
+}
+
+p {
+	line-height: 150%;
+	margin: 0;
+}
+
+.selection, select, p.please {
+  	padding: 1%;
+  	float: none;
+  	display: block;
+}
+
+button.button-submit {
+width: 100%;
+height: 50px;
+border: none;
+background: #43383a;
+color: whitesmoke;
+font-family: 'Pacifico', cursive;
+font-size: 20px;
+position: relative;
+right: 0;
+margin-top: 3%;
+margin-bottom: 5%;}
+}
+
+footer {
+	position: absolute;
+	top: 0;
+	right: 0;
 }

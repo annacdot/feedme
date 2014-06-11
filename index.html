@@ -2,60 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>feedMe! The Recipe Finder</title>
+  <title>feedMe!</title>
   <link rel="stylesheet" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <footer>
-      <!-- <p>Designed and developed by: Anna Colebatch</p> -->
-      <p><a href="http://annacolebatch.com">annacolebatch.com</a></p>
-    </footer>
+  
     <header>
       <h1><span class = "title">feed</span>me.</h1><h2>A recipe finder for the conscious eater.</h2>
     </header>
     <div class="wrapper">
     <!-- <div class="container"> -->
     <div class="diets">
-      <p>Select up to three dietary restrictions you are following and let us know one ingredient you want to include in your meal. We will find the right recipes for you.</p>
-      <div class="selection">
-        <label for="diet1">I need something that is</label>
-        <select name="diet1" id="diet1">
-        <option value="0"></option> <!-- is this the correct way? -->
-        <option value="Gluten-free">gluten-free.</option>
-        <!-- <option value="PUT HERE WHAT I NEED TO SEE IN THE LINK">wheat-free</option> -->
-        <option value="vegan">vegan.</option>
-        <option value="vegetarian">vegetarian.</option>
-        <option value="lactose-free">lactose-free.</option>    
-        </select>
-      </div> <!-- closes selection -->
+      <p class="diets">Select up to three dietary restrictions you are following and let us know one ingredient you want to include in your meal. We will find the right recipes for you.</p>
+        <div class="selection diet1">
+          <label for="diet1">I need something tasty that is</label>
+          <select name="diet1" id="diet1">
+          <option value="0"></option> <!-- is this the correct way? -->
+          <option value="Gluten-free">gluten-free.</option>
+          <!-- <option value="PUT HERE WHAT I NEED TO SEE IN THE LINK">wheat-free</option> -->
+          <option value="vegan">vegan.</option>
+          <option value="vegetarian">vegetarian.</option>
+          <option value="lactose-free">lactose-free.</option>    
+          </select>
+        </div> <!-- closes selection -->
   
-      <div class="selection">
-        <label for="diet2">It should also be</label>
-        <select name="diet2" id="diet2">
-        <option value="0"></option> <!-- is this the correct way? -->
-        <option value="Gluten-free" class="color">gluten-free</option>
-<!--         <option value="wheat-free">wheat-free</option>
- -->        <option value="vegan">vegan</option>
-        <option value="vegetarian">vegetarian</option>
-        <option value="lactose-free">lactose-free</option>  
-        </select>
-      </div> <!-- closes selection -->
+        <div class="selection diet2">
+          <label for="diet2">It should also be</label>
+          <select name="diet2" id="diet2">
+          <option value="0"></option> <!-- is this the correct way? -->
+          <option value="Gluten-free">gluten-free</option>
+  <!--         <option value="wheat-free">wheat-free</option>
+   -->        <option value="vegan">vegan</option>
+          <option value="vegetarian">vegetarian</option>
+          <option value="lactose-free">lactose-free</option>  
+          </select>
+        </div> <!-- closes selection -->
 
-      <div class="selection">
-        <label for="diet3">and</label>
-        <select name="diet3" id="diet3">
-        <option value="0"></option> <!-- is this the correct way? -->
-        <option value="Gluten-free">gluten-free!</option>
-<!--         <option value="wheat-free">wheat-free.</option>
- -->        <!-- avoid wheat, flour -->
-        <option value="vegan">vegan.</option>
-        <option value="vegetarian">vegetarian.</option>
-        <option value="lactose-free">lactose-free.</option>
-        </select>
-      </div> <!-- closes selection -->
+        <div class="selection diet3">
+          <label for="diet3">and</label>
+          <select name="diet3" id="diet3">
+          <option value="0"></option> <!-- is this the correct way? -->
+          <option value="Gluten-free">gluten-free!</option>
+  <!--         <option value="wheat-free">wheat-free.</option>
+   -->        <!-- avoid wheat, flour -->
+          <option value="vegan">vegan.</option>
+          <option value="vegetarian">vegetarian.</option>
+          <option value="lactose-free">lactose-free.</option>
+          </select>
+        </div> <!-- closes selection -->
       <p class="please">please.</p>
+    
     </div> <!-- closes diets -->
     
     <div class="includeIngredients">
@@ -63,6 +61,7 @@
         <p>But I totally feel like (add one ingredient):</p> 
         <input type="text" name="includeIngredient1" id="includeForm">
       </form>
+    
       <button class="button-submit">feed<span class="special">me!</span></button>
     </div> <!-- closes avoid ingredients -->
 
@@ -82,6 +81,9 @@
     <script src="recipeApp.js"></script>
 
   </div> <!-- closes wrapper -->
-  
+  <footer>
+      <!-- <p>Designed and developed by: Anna Colebatch</p> -->
+      <p>Got a web idea and need help? <a href="http://annacolebatch.com">annacolebatch.com</a></p>
+    </footer>
 </body>
 </html>
