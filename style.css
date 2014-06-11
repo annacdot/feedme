@@ -205,6 +205,7 @@ body .wrapper {
   -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
   margin: 5%;
+  min-height: 800px;
   position: relative;
   padding: 2%;
 }
@@ -225,11 +226,11 @@ h1 {
   text-shadow: whitesmoke 1px 4px 25px;
 }
 h1 span.title {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', sans-serif;
 }
 
 h2 {
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color: whitesmoke;
   text-shadow: whitesmoke 0.1em 0.1em 0.2em;
   font-size: 30px;
@@ -242,9 +243,13 @@ h2 {
 }
 
 label, p, option, h3, input[type=text] {
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color: whitesmoke;
   font-size: 20px;
+}
+
+option {
+  color: #43383a;
 }
 
 input[type=text] {
@@ -266,19 +271,17 @@ p.please {
   margin-left: 1%;
 }
 
+select {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  padding: 2px;
+}
+
 form {
   display: inline-block;
 }
 form p {
   display: inline-block;
-}
-
-p.diets {
-  width: 50%;
-  text-align: center;
-  line-height: 150%;
-  margin: 0 auto;
-  color: #43383a;
 }
 
 button.button-submit {
@@ -288,39 +291,38 @@ button.button-submit {
   border: none;
   background: #43383a;
   color: whitesmoke;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', sans-serif;
   font-size: 20px;
   position: absolute;
   right: 5%;
 }
 button.button-submit span.special {
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #recipes {
   clear: both;
   padding-top: 5%;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 #recipes .recipe {
   display: inline-block;
-  width: 280px;
-  height: 220px;
+  width: 180px;
+  height: 280px;
   float: left;
   border: 2px solid #43383a;
   margin: 3%;
+  background: #43383a;
 }
 #recipes .recipe p, #recipes .recipe h3 {
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
-  color: #43383a;
+  color: whitesmoke;
   line-height: 150%;
 }
 #recipes .recipe img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-left: 35%;
+  width: 100%;
 }
 #recipes .recipe a {
   color: white;
@@ -330,9 +332,6 @@ button.button-submit span.special {
 footer {
   text-align: right;
   padding-right: 1%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 footer p {
   font-size: 13px;
@@ -340,42 +339,5 @@ footer p {
 }
 footer p a {
   color: white;
-  text-decoration: underline;
-}
-
-@media only screen and (max-width: 450px) {
-  body .wrapper {
-    width: 100%;
-    margin: 0;
-  }
-
-  p {
-    line-height: 150%;
-    margin: 0;
-  }
-
-  .selection, select, p.please {
-    padding: 1%;
-    float: none;
-    display: block;
-  }
-
-  button.button-submit {
-    width: 100%;
-    height: 50px;
-    border: none;
-    background: #43383a;
-    color: whitesmoke;
-    font-family: 'Pacifico', cursive;
-    font-size: 20px;
-    position: relative;
-    right: 0;
-    margin-top: 3%;
-    margin-bottom: 5%;
-  }
-}
-footer {
-  position: absolute;
-  top: 0;
-  right: 0;
+  text-decoration: none;
 }
